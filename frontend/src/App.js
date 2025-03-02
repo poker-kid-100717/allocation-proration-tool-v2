@@ -28,7 +28,7 @@ function App() {
         };
 
         try {
-          const response = await axios.post("http://localhost:5000/api/prorate", payload);
+          const response = await axios.post("frontend-pu7dsuxkf-canopyweb.vercel.app/api", payload);
           setResults(response.data);
         } catch (error) {
             console.error("Error calculating proration", error);
